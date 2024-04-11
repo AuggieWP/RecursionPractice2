@@ -41,7 +41,15 @@ times `advancedExponent` is being recursively called.
 
 
 function advancedExponent(b, n) {
-  // Your code here 
+  let even = n % 2 === 0
+  if (n === 0)  {
+    return 1
+}
+  else if (even) {
+   return advancedExponent(b, n / 2) ** 2
+} else {
+  return b * advancedExponent(b, ((n - 1) / 2) ** 2)
+}
 }
 
 

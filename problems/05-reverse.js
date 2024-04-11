@@ -14,7 +14,12 @@ reverse(""); // ""
 
 
 function reverse(str) {
-  // Your code here 
+  if (str.length === 0) return ""
+  //let strLength = str.length - 1
+  //if (strLength === 1) return str
+ // strLength++
+  return str.charAt(str.length - 1) + reverse(str.substring(0, str.length - 1) );
+  
 }
 
 

@@ -21,7 +21,8 @@ exponent(5, 5); // 3125
 ***********************************************************************/
 
 function exponent(num, power) {
-    // Your code here 
+    if (num === 0) return 0
+    return (num ** power)
 }
   
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/

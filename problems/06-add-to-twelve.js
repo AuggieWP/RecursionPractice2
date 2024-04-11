@@ -14,7 +14,11 @@ addToTwelve([1]); // false
 
 
 function addToTwelve(arr) {
-  // Your code here 
+  let sum = 12;
+  if (arr.length < 2) return false
+  let pair = arr[0] + arr[1]
+  if (sum === pair) return true
+  return addToTwelve(arr.slice(1))
 }
 
 
